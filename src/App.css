@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,13 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+header{
+  height: 4.1875rem;
+}
+
+a.button.active {
+  border: 1px solid rgb(233, 228, 228);
 }
