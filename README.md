@@ -44,3 +44,22 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+## GitHub deploy
+yarn add gh-pages - add package
+
+"homepage": "https://rids56.github.io/keepTrack", - add repo url in package.json file before dependencies
+
+"scripts": {
+  "predeploy": "yarn build",
+  "deploy": "gh-pages -d build"
+} - add script command in package.json
+
+Push Your Code to GitHub
+
+yarn deploy - hit command
+
+GitHub repository --> Settings > Pages --> Under Branch, select gh-pages and click Save
+
+
