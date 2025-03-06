@@ -2,6 +2,7 @@
   "name": "keeptrack",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://rids56.github.io/keepTrack",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
@@ -11,6 +12,7 @@
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "gh-pages": "^6.3.0",
     "json-server": "0.16.2",
     "lodash": "^4.17.21",
     "mini.css": "3.0.1",
@@ -28,7 +30,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "api": "json-server api/db.json --port 4000"
+    "api": "json-server api/db.json --port 4000",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -48,4 +52,5 @@
       "last 1 safari version"
     ]
   }
+  
 }
